@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local
+    active: green
     group:
       local: local_server, common, secret
       blue: blue_server, common, secret
@@ -36,6 +36,8 @@ spring:
       on-profile: green_server
 server:
   port: 9090
+client:
+  address: http://localhost:3000
 
 ---
 
